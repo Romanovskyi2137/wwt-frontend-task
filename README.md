@@ -91,3 +91,7 @@ Also, to see how the compiled version of the program looks, you can use the scri
 ```shell
 npm run preview
 ```
+
+## Notes for Reviewer
+
+- Moved `filterData.json` from `src` to `public/api/` to ensure that `fetch` works correctly in both development and production environments (as the `src` directory is not available after the build).

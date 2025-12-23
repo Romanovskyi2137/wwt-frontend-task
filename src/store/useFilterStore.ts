@@ -5,7 +5,7 @@ import { FilterChoose } from '@/shared/api/types/Filter'
 const useFilterStore = create(set => ({
 	filters: [],
 	setFilters: (newFilters: FilterChoose[]) => {
-		set([...newFilters])
+		set({ filters: [...newFilters] })
 	}
 }))
 
