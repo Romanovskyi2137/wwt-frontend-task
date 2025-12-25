@@ -1,5 +1,7 @@
 import { en } from './en'
 
 export const resources = {
-	en: en
+	en: {
+		translation: en
+	}
 } as const
