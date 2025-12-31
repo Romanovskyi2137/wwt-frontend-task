@@ -95,3 +95,6 @@ npm run preview
 ## Notes for Reviewer
 
 - Moved `filterData.json` from `src` to `public/api/` to ensure that `fetch` works correctly in both development and production environments (as the `src` directory is not available after the build).
+
+- changed path alias in tsconfig.json: "@/*": ["./src/*"] to "@*": ["./src/*"]
+to resolve eslint and tsconfig conflict
